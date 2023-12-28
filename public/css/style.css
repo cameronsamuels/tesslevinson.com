@@ -1,0 +1,141 @@
+/* Entire page */
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Add padding to left of page */
+header,
+nav,
+main,
+footer {
+    padding-left: 50px !important;
+}
+
+/* Smaller padding for smaller screens */
+@media screen and (max-width: 500px) {
+    header,
+    nav,
+    main,
+    footer {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    footer div {
+        display: none;
+    }
+}
+
+/* Reset some default values */
+a {
+    color: inherit !important;
+    text-decoration: underline;
+}
+
+iframe {
+    max-width: 100%;
+    border: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+
+/* Header bar */
+header {
+    display: flex;
+    padding: 20px 0;
+    background: #eee;
+    color: #183572;
+}
+
+/* Logo at top left */
+header img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+/* Website heading */
+header h2 {
+    margin: 22px 0 0;
+}
+header h2 span {
+    line-height: 5px;
+    font-size: .8em;
+}
+
+/* Page menu to right of name heading */
+nav {
+    display: flex;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background: #183572;
+    overflow-x: scroll;
+}
+
+/* Each clickable page item */
+nav a {
+    display: inline-block;
+    height: 100%;
+    padding: 0 10px;
+    color: #eee !important;
+    transition: background-color .5s;
+    line-height: 50px;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+/* Lighten page link when hover */
+nav a:hover {
+    background: #335bb1;
+}
+
+/* Navbar toggler */
+nav .navbar-toggler {
+    margin: 10px;
+}
+
+
+/* Page content wrapper */
+main {
+    padding: 20px;
+    padding-bottom: 8rem;
+}
+
+
+/* Footer at bottom */
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 50px;
+    background: #5c709a;
+    color: #fff;
+    text-align: center;
+}
+
+/* Copyright */
+footer p {
+    margin: 0;
+    line-height: 30px;
+}
+
+/* Socials icons */
+footer div {
+    flex: 1;
+    text-align: right;
+}
+footer .fa-brands {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+}
