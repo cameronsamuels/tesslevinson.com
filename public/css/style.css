@@ -119,6 +119,7 @@ main {
     grid-column-end: span 2;
 }
 
+
 /* Footer at bottom */
 footer {
     display: flex;
@@ -153,6 +154,11 @@ footer .fa-brands {
 
 
 /* Page styles */
+.btn.btn-secondary {
+    color: #fff !important;
+    text-decoration: none;
+}
+
 #pageHome #portrait {
     max-width: 100%;
     max-height: 100%;
@@ -161,8 +167,6 @@ footer .fa-brands {
 #pageHome .btn {
     width: 100%;
     margin: 10px 0;
-    color: #fff !important;
-    text-decoration: none;
 }
 
 #pagePubs ul {
@@ -171,6 +175,14 @@ footer .fa-brands {
 
 #pagePubs li {
     margin-bottom: 5pt;
+}
+
+#pageContact .fail {
+    color: red;
+}
+
+#pageContact textarea {
+    height: 150px;
 }
 
 
