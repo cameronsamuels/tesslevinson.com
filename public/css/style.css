@@ -34,6 +34,7 @@ h1, h2, h3, h4 {
 /* Header bar */
 header {
     display: flex;
+    justify-content: center;
     padding: 20px 0;
     background: #eee;
     color: #412234;
@@ -94,6 +95,29 @@ main {
     padding: 20px 10vw 8rem 10vw !important;
 }
 
+
+/* Flex column layout */
+.flex-container {
+    display: flex;
+}
+.flex-container>* {
+    flex: 1;
+    margin: 10px;
+}
+.flex-container>.flex-large {
+    flex: 2 0;
+}
+
+/* Grid column layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.grid-container>.grid-large {
+    display: inline;
+    grid-column-end: span 2;
+}
 
 /* Footer at bottom */
 footer {
@@ -158,6 +182,9 @@ footer .fa-brands {
     footer {
         padding-left: 20px !important;
         padding-right: 20px !important;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 @media screen and (max-width: 400px) {
