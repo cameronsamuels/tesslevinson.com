@@ -140,6 +140,16 @@ footer .fa-brands {
     color: #fff !important;
     text-decoration: none;
 }
+
+#pagePubs ul {
+    font-family: 'Times New Roman';
+}
+
+#pagePubs li {
+    margin-bottom: 5pt;
+}
+
+
 /* Smaller padding for smaller screens */
 @media screen and (max-width: 500px) {
     header,
