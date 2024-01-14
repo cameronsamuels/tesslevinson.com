@@ -12,22 +12,7 @@ nav,
 main,
 footer {
     padding-left: 50px !important;
-}
-
-/* Smaller padding for smaller screens */
-@media screen and (max-width: 500px) {
-    header,
-    nav,
-    main,
-    footer {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
-}
-@media screen and (max-width: 400px) {
-    footer div {
-        display: none;
-    }
+    padding-right: 50px !important;
 }
 
 /* Reset some default values */
@@ -51,7 +36,7 @@ header {
     display: flex;
     padding: 20px 0;
     background: #eee;
-    color: #183572;
+    color: #412234;
 }
 
 /* Logo at top left */
@@ -62,11 +47,11 @@ header img {
 
 /* Website heading */
 header h2 {
-    margin: 22px 0 0;
+    margin: 15px 0 0;
 }
 header h2 span {
-    line-height: 5px;
-    font-size: .8em;
+    font-size: .5em;
+    margin: 0;
 }
 
 /* Page menu to right of name heading */
@@ -74,8 +59,11 @@ nav {
     display: flex;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    background: #183572;
+    background: #412234;
     overflow-x: scroll;
+}
+nav #navbarMenu {
+    justify-content: center;
 }
 
 /* Each clickable page item */
@@ -83,7 +71,7 @@ nav a {
     display: inline-block;
     height: 100%;
     padding: 0 10px;
-    color: #eee !important;
+    color: #fafafa !important;
     transition: background-color .5s;
     line-height: 50px;
     text-decoration: none;
@@ -92,7 +80,7 @@ nav a {
 
 /* Lighten page link when hover */
 nav a:hover {
-    background: #335bb1;
+    background: #7b5269;
 }
 
 /* Navbar toggler */
@@ -103,8 +91,7 @@ nav .navbar-toggler {
 
 /* Page content wrapper */
 main {
-    padding: 20px;
-    padding-bottom: 8rem;
+    padding: 20px 10vw 8rem 10vw !important;
 }
 
 
@@ -115,8 +102,8 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 30px 50px;
-    background: #5c709a;
+    padding: 20px 50px;
+    background: #7b5269;
     color: #fff;
     text-align: center;
 }
@@ -138,4 +125,33 @@ footer .fa-brands {
     font-size: 20px;
     line-height: 30px;
     text-decoration: none;
+}
+
+
+/* Page styles */
+#pageHome #portrait {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#pageHome .btn {
+    width: 100%;
+    margin: 10px 0;
+    color: #fff !important;
+    text-decoration: none;
+}
+/* Smaller padding for smaller screens */
+@media screen and (max-width: 500px) {
+    header,
+    nav,
+    main,
+    footer {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    footer div {
+        display: none;
+    }
 }
