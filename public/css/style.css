@@ -177,6 +177,13 @@ footer .fa-brands {
     margin-bottom: 5pt;
 }
 
+#pageProjects section {
+    border: 8px #7b5269 solid;
+    border-radius: 20px;;
+    margin: 10px 0;
+    padding: 20px;
+}
+
 #pageContact .fail {
     color: red;
 }
@@ -197,10 +204,5 @@ footer .fa-brands {
     }
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media screen and (max-width: 400px) {
-    footer div {
-        display: none;
     }
 }
